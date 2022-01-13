@@ -2506,7 +2506,7 @@
                 </option>
                 <option>
                     <name>General Xdata Stack Size</name>
-                    <state>0x4D0</state>
+                    <state>0x400</state>
                 </option>
                 <option>
                     <name>General Ext Stack Size</name>
@@ -2610,7 +2610,7 @@
                 </option>
                 <option>
                     <name>OGChipConfigPath</name>
-                    <state>$TOOLKIT_DIR$\config\devices\Texas Instruments\CC2530F256.i51</state>
+                    <state>C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\8051\bin\..\config\devices\Texas Instruments\CC25xx\3x\CC2530F256.i51</state>
                 </option>
                 <option>
                     <name>PCReadOnly</name>
@@ -2660,6 +2660,7 @@
                     <state>MT_GP_CB_FUNC</state>
                     <state>ASSERT_RESET</state>
                     <state>FAKE_CRC_SHDW</state>
+                    <state>ZNP_ALT</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -3550,7 +3551,7 @@
             <name>$PROJ_DIR$\..\..\..\..\Components\stack\bdb\bdb_touchlink.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Components\stack\bdb\bdb_touchlink.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\Components\stack\bdb\bdb_touchLink.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\..\Components\stack\bdb\bdb_touchlink_initiator.c</name>

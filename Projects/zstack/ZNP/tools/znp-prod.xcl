@@ -276,3 +276,6 @@ _NR_OF_BANKS+_FIRST_BANK_ADDR=0x8000
 -HFFFF
 //
 ////////////////////////////////////////////////////////////////////////////////
+-D?B=F0                       // B register location
+-D?IE=A8                      // Interrupt Enable register location
+-D?IP=A9                      // Interrupt Priority register location

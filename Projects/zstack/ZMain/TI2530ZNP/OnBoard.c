@@ -146,19 +146,19 @@ void InitBoard( uint8 level )
     osal_int_disable( INTS_ALL );
     // Check for Brown-Out reset
     ChkReset();
-
 #if defined CC2531ZNP
     znpCfg1 = ZNP_CFG1_UART;
 #elif defined CC2530_MK
     znpCfg1 = ZNP_CFG1_SPI;
     znpCfg0 = ZNP_CFG0_32K_OSC;
 #else
-    znpCfg1 = P2_0;
-    znpCfg0 = P1_2;
+    znpCfg0 = ZNP_CFG0_32K_XTAL;
+    znpCfg1 = ZNP_CFG1_UART;
     // Tri-state the 2 CFG inputs after being read (see hal_board_cfg_xxx.h for CFG0.)
     P1INP |= BV(2);
     P2INP |= BV(0);
 #endif
+/* */
   }
   else  // !OB_COLD
   {
