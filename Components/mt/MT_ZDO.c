@@ -2272,7 +2272,8 @@ static uint8 MT_ZdoHandleExceptions( afIncomingMSGPacket_t *pData, zdoIncomingMs
       ZDO_ParseDeviceAnnce( inMsg, &devAnnce );
       MT_ZdoEndDevAnnceCB( &devAnnce, inMsg->srcAddr.addr.shortAddr );
       break;
-
+    /*
+    //Why? Why?
     case Simple_Desc_rsp:
       if ( pData->cmd.DataLength > 5 )
       {
@@ -2283,7 +2284,7 @@ static uint8 MT_ZdoHandleExceptions( afIncomingMSGPacket_t *pData, zdoIncomingMs
         doDefault = TRUE;
       }
       break;
-
+    */
     default:
       ret = FALSE;
       break;
